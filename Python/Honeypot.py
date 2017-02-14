@@ -33,5 +33,5 @@ def get_count(s):
     l=list()
     s_l=list(s)
     s_l.sort()
-    [l.extend((k, len(list(group)))) for k, group in groupby(s)]
+    [l.extend((k, len(list(group)))) for k, group in groupby(s_l)]
     return l
